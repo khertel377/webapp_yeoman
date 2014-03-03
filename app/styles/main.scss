@@ -9,56 +9,77 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
     padding: 0.2em 0;
 }
 
+//background gradient
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 /* Space out content a bit */
 body {
     padding-top: 0px;
     padding-bottom: 20px;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
+#full-screen-background-image {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-/* Custom page header */
-.header {
-    //border-bottom: 1px solid #e5e5e5;
-
-    /* Make the masthead heading the same height as the navigation */
-    h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-        padding-bottom: 19px;
-    }
-}
-
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
-    padding-bottom: 30px;
-}
-
-.container-narrow > hr {
-    margin: 0px 0;
-}
-
-/* Main marketing message and sign up button */
 .content {
     margin-top: 30px;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
     border-bottom: 1px solid #e5e5e5;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-    }
+}
+
+#tagline {
+    opacity: .65;
+    padding-bottom: 3em;
+}
+
+.hero img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#mc_embed_signup {
+    background: none; clear:left; font:14px Helvetica,Arial,sans-serif; 
+}
+
+input.button {
+  background-color: #5cb85c !important;
+  border-color: #4cae4c !important;
+} 
+
+input.button:hover {
+    background-color: #3D9728 !important;
+}
+
+#footer {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.icon {
+    display: inline-block;
+    width: 15%;
+    height: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 /* Responsive: Portrait tablets and up */
@@ -96,64 +117,9 @@ body {
     #hero img {
         max-width: 100%;
     }
-}
-
-
-//background gradient
-html, body {
-  height: 100%;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-#full-screen-background-image {
-  z-index: -999;
-  min-height: 100%;
-  min-width: 1024px;
-  width: 100%;
-  height: auto;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-#container {
-  position: relative;
-  width: 800px;
-  min-height: 400px;
-  margin: 100px auto;
-  color: #333;
-}
-
-#tagline {
-    opacity: .65;
-    padding-bottom: 3em;
-}
-
-.hero img {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#mc_embed_signup {
-    background: none; clear:left; font:14px Helvetica,Arial,sans-serif; 
-}
-
-input.button {
-  background-color: #5cb85c !important;
-  border-color: #4cae4c !important;
-} 
-
-input.button:hover {
-    background-color: #3D9728 !important;
-}
-
-.icon {
-    width: 10%;
-    height: 10%;
-    display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
+    .icon {
+        min-width: 60px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 }
